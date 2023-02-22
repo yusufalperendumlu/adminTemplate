@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Admin Template</title>
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="left-temp" id="lefttemp">
+            <div class="left-temp-up">
+                <img src="https://lh3.googleusercontent.com/wAPeTvxh_EwOisF8kMR2L2eOrIOzjfA5AjE28W5asyfGeH85glwrO6zyqL71dCC26R63chADTO7DLOjnqRoXXOAB8t2f4C3QnU6o0BA" alt="adminLogo">
+                <h2>Admin <span id="temp-title"></span></h2>
+            </div>
+
+            <div class="left-temp-mid">
+                <ul>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">My Drive</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Shared Files</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">File Request</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Starred</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Trash</a>
+                    </li>
+                    <li class="temp-list" id="templi"> 
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Statistics</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Task</a>
+                    </li>
+                    <li class="temp-list" id="templi">
+                        <span class="active">
+
+                        </span>
+                        <a href="#" id="ass">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="left-temp-down">
+                <div class="down-up">
+                    <p>Storage</p>
+                    <span>27%</span>
+                </div>
+
+                <div class="down-down">
+                    <div class="percent-bar"></div>
+                    <h3>27/100 GB Used.</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mid-temp" id="midtemp">
+            <div class="mid-temp-content">
+                <div class="search">
+                    <input type="search" placeholder="Aranacak Olan Kelimeyi Giriniz..." id="textIn">
+                    <button id="searchClick">
+                        <a href="#" id="linkSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="dashboard">
+                    <div class="dashboard-top">
+                        <h2>Dashboard</h2>
+                        <form class="form">
+                            <div class="file-upload-wrapper" data-text="Select your file!">
+                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                            </div>
+                          </form>
+                    </div>
+                    <div class="dashboard-bottom">
+                        <div class="bottom-left">
+                            <h2>Welcome Back Jannie</h2>
+                            <p>Get additional 500GB for your documents and files. Unlock now for more space.</p>
+                            <button>Upgrade</button>
+                        </div>
+                        <div class="bottom-right">
+                            <img src="assets/sunum.svg" alt="info">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="folders">
+                    <div class="folders-content">
+                        <div class="folders-top">
+                            <h2>Folders</h2>
+                            <button>View All</button>
+                        </div>
+                    </div>
+                    
+                    <div class="folders-bottom">
+                        <div class="card red">
+                            <div class="cardTop">
+                                <span class="frame">
+                                    <a href="#">
+                                        <i class="fa-brands fa-opencart"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="cardName">
+                                <h3>Yusuf Alperen Dumlu</h3>
+                            </div>
+                            <div class="cardImages">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <span>+4</span>
+                            </div>
+                            <div class="cardEnd">
+                                <p>10 Files</p>
+                                <p id="date"></p>
+                            </div>
+                        </div>
+                        <div class="card blue">
+                            <div class="cardTop">
+                                <span class="frame">
+                                    <a href="#">
+                                        <i class="fa-brands fa-opencart"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="cardName">
+                                <h3>Yusuf Alperen Dumlu</h3>
+                            </div>
+                            <div class="cardImages">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <span>+4</span>
+                            </div>
+                            <div class="cardEnd">
+                                <p>10 Files</p>
+                                <p id="dateOne"></p>
+                            </div>
+                        </div>
+                        <div class="card yellow">
+                            <div class="cardTop">
+                                <span class="frame">
+                                    <a href="#">
+                                        <i class="fa-brands fa-opencart"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="cardName">
+                                <h3>Yusuf Alperen Dumlu</h3>
+                            </div>
+                            <div class="cardImages">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <img src="assets/profil.png" alt="staf">
+                                <span>+4</span>
+                            </div>
+                            <div class="cardEnd">
+                                <p>10 Files</p>
+                                <p id="dateTwo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <hr>
+
+                <div class="recendFiles">
+                    <div class="files-top">
+                        <h2>Recend Files</h2>
+                        <button>View All</button>
+                    </div>
+                    <div class="rowCard">
+                        <div class="fileType red">pdf</div>
+                        <div class="fileComment"> Design Thinking Process </div>
+                        <div class="forFile">Only You</div>
+                        <div class="fileDate">
+                            <p id="datefile"></p>
+                        </div>
+                        <div class="fileSize">2 MB</div>
+                    </div>
+                    <div class="rowCard">
+                        <div class="fileType yellow">png</div>
+                        <div class="fileComment"> Design Thinking Process </div>
+                        <div class="forFile">Only You</div>
+                        <div class="fileDate">
+                            <p id="datefileOne"></p>
+                        </div>
+                        <div class="fileSize">2 MB</div>
+                    </div>
+                    <div class="rowCard">
+                        <div class="fileType blue">zip</div>
+                        <div class="fileComment"> Design Thinking Process </div>
+                        <div class="forFile">Only You</div>
+                        <div class="fileDate">
+                            <p id="datefileTwo"></p>
+                        </div>
+                        <div class="fileSize">2 MB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="right-temp" id="righttemp">
+            <div class="profil-info">
+                <img src="assets/profil.png" alt="admin">
+                <h2>Yusuf Alperen Dumlu 
+                    <i class="fa-solid fa-sort-down" id="sect">
+                    <span class="setting" id="settt">
+                        <a href="#">Settings</a>
+                        <a href="#">Log Out</a>
+                    </span>
+                </i>
+            </h2>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="jQuary/script.js"></script>
+    <script src="https://kit.fontawesome.com/bfb7b37f5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
