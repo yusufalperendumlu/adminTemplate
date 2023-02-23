@@ -268,11 +268,13 @@ hr
                     .file-upload-wrapper 
                     {
 
-                        $height: 40px;
+                        $height: 50px;
                         
                         position: relative;
                         width: 100%;
                         height: $height;
+                        overflow: hidden;
+                        top: -5px;
                         
                         &:after {
                         content: attr(data-text);
@@ -281,13 +283,12 @@ hr
                         top: 0;
                         left: 0;
                         background: #fff;
-                        padding: 10px 15px;
+                        padding: 15px 15px;
                         display: block;
                         width: calc(100% - 40px);
                         pointer-events: none;
                         z-index: 1;
-                        height: $height - 20px;
-                        line-height: $height - 20px;
+                        height: $height - 30px;
                         color: #999;
                         border-radius: 5px 10px 10px 5px;
                         font-weight: 300;
@@ -759,7 +760,7 @@ hr
 
                     .setting
                     {
-                        height: 12vh;
+                        height: auto;
                         width: auto;
                         right: 1.5%;
                         background: $theme-color;

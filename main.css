@@ -212,7 +212,9 @@ hr {
 .container .mid-temp .mid-temp-content .dashboard .dashboard-top .file-upload-wrapper {
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 50px;
+  overflow: hidden;
+  top: -5px;
 }
 .container .mid-temp .mid-temp-content .dashboard .dashboard-top .file-upload-wrapper:after {
   content: attr(data-text);
@@ -221,13 +223,12 @@ hr {
   top: 0;
   left: 0;
   background: #fff;
-  padding: 10px 15px;
+  padding: 15px 15px;
   display: block;
   width: calc(100% - 40px);
   pointer-events: none;
   z-index: 1;
   height: 20px;
-  line-height: 20px;
   color: #999;
   border-radius: 5px 10px 10px 5px;
   font-weight: 300;
@@ -238,13 +239,13 @@ hr {
   top: 0;
   right: 0;
   display: inline-block;
-  height: 40px;
+  height: 50px;
   background: #562deb;
   color: #fff;
   font-weight: 700;
   z-index: 25;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 50px;
   padding: 0 15px;
   text-transform: uppercase;
   pointer-events: none;
@@ -261,7 +262,7 @@ hr {
   bottom: 0;
   left: 0;
   z-index: 99;
-  height: 20px;
+  height: 30px;
   margin: 0;
   padding: 0;
   display: block;
@@ -576,7 +577,7 @@ hr {
   cursor: pointer;
 }
 .container .right-temp .profil-info h2 i .setting {
-  height: 12vh;
+  height: auto;
   width: auto;
   right: 1.5%;
   background: #EFF3FB;
