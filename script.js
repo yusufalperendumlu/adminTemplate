@@ -137,7 +137,48 @@ sec.addEventListener('click', (e) => {
 
 })
 
+const leftColor = document.getElementById("paletteLeft");
+const midColor = document.getElementById("paletteMid");
+const rightColor = document.getElementById("paletteRight");
 
+const palettes = leftColor + midColor + rightColor;
+console.log(palettes);
+
+leftColor.addEventListener('change', () => {
+    leftMain.style.backgroundColor = leftColor.value;
+})
+
+midColor.addEventListener('change', () => {
+    midMain.style.backgroundColor = midColor.value;
+})
+
+rightColor.addEventListener('change', () => {
+    rightMain.style.backgroundColor = rightColor.value;
+})
+
+
+const chan = document.getElementById("Word");
+
+rightMain.addEventListener('mousemove', () => {
+     const word = document.getElementById("word");
+
+     word.innerHTML = "Left  |  Mid  |  Right";
+     
+     if(word.innerHTML = "Left  |  Mid  |  Right")
+     {
+        rightMain.addEventListener('mouseleave', () => {
+            word.innerHTML = "Color Change";
+        })
+     }
+})
+
+const zerClick = document.getElementById("buttonZ");
+
+zerClick.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    document.location. reload();
+})
 
 
 

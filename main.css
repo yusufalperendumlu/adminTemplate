@@ -31,7 +31,7 @@ body {
 
 hr {
   max-width: 100%;
-  margin: 8% 10% 5% 0;
+  margin: 10% 10% 7% 0;
 }
 
 .container {
@@ -449,11 +449,11 @@ hr {
   box-shadow: 0 0 15px 0 #013795;
   transition: all 300ms ease-in;
 }
-.container .mid-temp .mid-temp-content .folders .folders-bottom .yellow {
-  background: #f1f100;
+.container .mid-temp .mid-temp-content .folders .folders-bottom .orange {
+  background: #ff8800;
 }
-.container .mid-temp .mid-temp-content .folders .folders-bottom .yellow:hover {
-  box-shadow: 0 0 15px 0 #f1f100;
+.container .mid-temp .mid-temp-content .folders .folders-bottom .orange:hover {
+  box-shadow: 0 0 15px 0 #ff8800;
   transition: all 300ms ease-in;
 }
 .container .mid-temp .mid-temp-content .recendFiles {
@@ -524,8 +524,8 @@ hr {
 .container .mid-temp .mid-temp-content .recendFiles .rowCard .red {
   background: #ff0000;
 }
-.container .mid-temp .mid-temp-content .recendFiles .rowCard .yellow {
-  background: #f1f100;
+.container .mid-temp .mid-temp-content .recendFiles .rowCard .orange {
+  background: #ff8800;
 }
 .container .mid-temp .mid-temp-content .recendFiles .rowCard .blue {
   background: #013795;
@@ -553,7 +553,7 @@ hr {
   height: 180vh;
 }
 .container .right-temp .profil-info {
-  height: 50vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -618,4 +618,96 @@ hr {
 .container .right-temp .profil-info h2 i .setting a:hover:before {
   width: 5px;
   transition: width 0.3s;
+}
+.container .right-temp .profil-info .divWord {
+  max-height: 90px;
+  height: 45px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f7f7f7;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  margin-top: 40%;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+.container .right-temp .profil-info .divWord .wordC {
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 45px;
+  width: 100%;
+  color: #2d364c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+.container .right-temp .colorPal {
+  height: 45px;
+  margin: 15% 0 0 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.container .right-temp .colorPal #paletteLeft, .container .right-temp .colorPal #paletteMid, .container .right-temp .colorPal #paletteRight {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.container .right-temp .colorPal #paletteLeft::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp .colorPal #paletteLeft::-moz-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp .colorPal #paletteMid::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp .colorPal #paletteMid::-moz-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp .colorPal #paletteRight::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp .colorPal #paletteRight::-moz-color-swatch {
+  border-radius: 50%;
+  border: 1px solid #9000ff;
+  box-shadow: 0 0 10px 0 #000c20;
+}
+.container .right-temp button {
+  width: 100px;
+  height: 30px;
+  background: rgba(153, 153, 153, 0.0941176471);
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  color: rgb(96, 96, 96);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 300ms ease-in;
+  margin: 8rem 0 0 0;
 }/*# sourceMappingURL=main.css.map */

@@ -33,7 +33,7 @@ body
 hr
 {
     max-width: 100%;
-    margin: 8% 10% 5% 0;
+    margin: 10% 10% 7% 0;
 }
 
 
@@ -580,13 +580,13 @@ hr
                         }
                     }
 
-                    .yellow
+                    .orange
                     {
-                        background: #f1f100;
+                        background: #ff8800;
 
                         &:hover
                         {
-                            box-shadow: 0 0 15px 0 #f1f100;
+                            box-shadow: 0 0 15px 0 #ff8800;
                             transition: all 300ms ease-in;
                         }
                     }
@@ -683,9 +683,9 @@ hr
                     }
                     
 
-                    .yellow
+                    .orange
                     {
-                        background: #f1f100;
+                        background: #ff8800;
                     }
 
                     .blue
@@ -731,7 +731,7 @@ hr
 
         .profil-info
         {
-            height: 50vh;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: right;
@@ -812,6 +812,132 @@ hr
                     }
                 }
             }
+
+        .divWord
+        {
+            max-height: 90px;
+            height: 45px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $mid-color;
+            border-radius: 15px;
+            padding: 10px;
+            position: relative;
+            margin-top: 40%;
+            transition: all 300ms ease-in;
+            cursor: pointer;
+            
+            .wordC
+            {
+                
+                font-size: 0.8rem;
+                font-weight: 700;
+                height: 45px;
+                width: 100%;
+                color: $box-two;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                transition: all 300ms ease-in;
+                cursor: pointer;
+            }
+
+            
+            
+            }
+        }
+
+
+        .colorPal
+        {
+            height: 45px;
+            margin: 15% 0 0 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: right; 
+
+            #paletteLeft, #paletteMid, #paletteRight
+            {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 45px;
+                height: 45px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            #paletteLeft::-webkit-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+
+            #paletteLeft::-moz-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+
+            #paletteMid::-webkit-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+
+            #paletteMid::-moz-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+
+            #paletteRight::-webkit-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+
+            #paletteRight::-moz-color-swatch
+            {
+                border-radius: 50%;
+                border: 1px solid #9000ff;
+                box-shadow: 0 0 10px 0 #000c20;
+            }
+        
+            
+
+        }
+
+        button
+        {
+            width: 100px;
+            height: 30px;
+            background: #99999918;
+            border: 1px solid $mid-color;
+            border-radius: 10px;
+            color: rgb(96, 96, 96);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            opacity: 1;
+            transition: all 300ms ease-in;
+            margin: 8rem 0 0 0;
         }
     }
+
+        
+
+      
 }
