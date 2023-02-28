@@ -20,49 +20,49 @@
             <div class="left-temp-mid">
                 <ul>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
-                        <a href="#" id="ass">My Drive</a>
+                        <a href="#" id="ass">My drive</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
-                        <a href="#" id="ass">Shared Files</a>
+                        <a href="#" id="ass">Shared files</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
-                        <a href="#" id="ass">File Request</a>
+                        <a href="#" id="ass">File request</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
                         <a href="#" id="ass">Starred</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
                         <a href="#" id="ass">Trash</a>
                     </li>
                     <li class="temp-list" id="templi"> 
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
                         <a href="#" id="ass">Statistics</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
                         <a href="#" id="ass">Task</a>
                     </li>
                     <li class="temp-list" id="templi">
-                        <span class="active">
+                        <span class="active" id="spanid">
 
                         </span>
                         <a href="#" id="ass">Logout</a>
@@ -237,15 +237,17 @@
 
         <div class="right-temp" id="righttemp">
             <div class="profil-info">
-                <img src="assets/profil.png" alt="admin">
-                <h2>Yusuf Alperen Dumlu 
-                    <i class="fa-solid fa-sort-down" id="sect">
-                    <span class="setting" id="settt">
-                        <a href="#">Settings</a>
-                        <a href="#">Log Out</a>
-                    </span>
-                </i>
-            </h2>
+                <div class="info-member" id="member">
+                    <img src="assets/profil.png" alt="admin">
+                    <h2 id="right-text-name">Yusuf Alperen Dumlu 
+                        <i class="fa-solid fa-sort-down" id="sect">
+                            <span class="setting" id="settt">
+                                <a href="#">Settings</a>
+                                <a href="#">Log Out</a>
+                            </span>
+                        </i>
+                    </h2>
+                </div>
 
             <div class="divWord" id="Word">
                 <p class="wordC" id="word">Color Change</p>
@@ -253,9 +255,9 @@
 
             <div class="colorPal">
                 
-                <input type="color" class="palette left" id="paletteLeft"></input>
-                <input type="color" class="palette mid" id="paletteMid"></input>
-                <input type="color" class="palette right" id="paletteRight"></input>
+                <input type="color" class="palette left" id="paletteLeft"><i class="fa-sharp fa-solid fa-gear"></i></input>
+                <input type="color" class="palette mid" id="paletteMid"><i class="fa-sharp fa-solid fa-gear"></i></input>
+                <input type="color" class="palette right" id="paletteRight"><i class="fa-sharp fa-solid fa-gear"></i></input>
             </div>
                 <button id="buttonZ">Reset</button>
             </div>

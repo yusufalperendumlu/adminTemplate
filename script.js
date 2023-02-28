@@ -36,7 +36,7 @@ rightMain.addEventListener('mouseleave', () => {
     midMain.style.left = `${18}rem`;
 })
 
-const temptitles = ['Paneli', 'Kontrol', 'Değiştir'];
+const temptitles = ['paneli', 'kontrol', 'değiştir'];
 let temptitle = document.getElementById("temp-title");
 let i = 0;
 
@@ -59,6 +59,7 @@ textIn.addEventListener('keypress', (e) => {
     if(e.key == "Enter")
     {
         textIn.value = "";
+        confirm("Are you sure ?");
     }  
 })
 
@@ -134,6 +135,7 @@ sec.addEventListener('click', (e) => {
             setting.style.display = "none";
         })
     }
+    
 
 })
 
@@ -180,5 +182,23 @@ zerClick.addEventListener('click', (e) => {
     document.location. reload();
 })
 
+const card = document.querySelectorAll(".card");
 
+card.forEach(card => {
+    card.addEventListener('mouseleave', () => {
+        card.setAttribute("style", "transition: all 300ms;")
+    })
+})
 
+const tempList = document.querySelectorAll(".temp-list");
+const aTemp = document.querySelectorAll("#ass");
+const spanTemp = document.querySelectorAll(".active");
+
+tempList.forEach(list => {
+    list.addEventListener('click', () => {
+        spanTemp.forEach((span) => {
+            
+            
+        })
+    })
+})

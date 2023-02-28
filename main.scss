@@ -61,12 +61,21 @@ hr
             align-items: center;
             justify-content: flex-start;
             margin: 10px 5px;
-            
+
             img
             {
                 height: 20%;
                 width: 20%;
                 cursor: pointer;
+                filter: grayscale(80%);
+                transition: all 300ms ease-out;
+
+                &:hover
+                {
+                    filter: grayscale(0%);
+                }
+                
+                
             }
 
             h2
@@ -110,6 +119,12 @@ hr
                     position: absolute;
                     visibility: hidden;
                     }
+
+                    .aactive
+                    {
+                        visibility: visible;
+                    }
+                    
 
                     a
                     {
@@ -210,7 +225,7 @@ hr
                     width: 450px;
                     border: none;
                     text-indent: 10px;
-                    padding: 0 0 0 60px;
+                    padding: 0 20px 0 60px;
                     font-weight: 500;
                 }
 
@@ -468,6 +483,7 @@ hr
                         opacity: 0.8;
 
 
+
                         .cardTop
                         {
                             width: 100%;
@@ -565,7 +581,8 @@ hr
                         &:hover
                         {
                             box-shadow: 0 0 15px 0 #ff0000;
-                            transition: all 300ms ease-in;
+                            transition:all  300ms ease-in;
+
                         }
                     }
 
@@ -725,87 +742,116 @@ hr
     .right-temp
     {
         background: $right-color;
-        right: 25px;
+        right: 0;
         width: 30%;
         height: 180vh;
 
+
         .profil-info
         {
-            height: auto;
+            height: 25%;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: right;
             flex-direction: column;
-            margin: 20% 0 0 50%;
+            
 
-            img
+            .info-member
             {
-                width: 45px;
-                height: 45px;
-            }
+                width: 100%;
+                height: 0;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                flex-direction: column;
+                margin: 10% 0 0 50%;
+                gap: 0.7rem;
+                
 
-            h2
-            {
-                height: 40px;
-                font-size: 0.8rem;
-                font-weight: 700;
-
-                i
+                img
                 {
-                    text-align: center;
-                    display: inline-block;
-                    width: 40px;
+                    width: 45px;
+                    height: 45px;
+
+                }
+
+                h2
+                {
+                    height: 40px;
                     font-size: 0.8rem;
-                    cursor: pointer;
+                    font-weight: 700;
+                    box-shadow: inset 0 0 0 0 #54b3d6;
+                    color: #54b3d6;
+                    margin: 0 -.5rem;
+                    padding: 0 .50rem;
+                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
-                    .setting
+                    &:hover
                     {
-                        height: auto;
-                        width: auto;
-                        right: 1.5%;
-                        background: $theme-color;
+                        color: #fff;
+                        box-shadow: inset 150px 0 0 #7bb5d0;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                    }
+
+                    i
+                    {
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
                         font-size: 0.8rem;
-                        text-align: left;
-                        position: fixed;
-                        opacity: 0.8;
-                        border-radius: 15px;
-                        transition: all 700ms ease-out;
-                        z-index: 1;
-                        display: none;
-                        
-                        a
+                        cursor: pointer;
+
+                        .setting
                         {
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                            line-height: 25px;
-                            width: 100px;
-                            color: $left-color;
+                            height: auto;
+                            width: auto;
+                            background: $theme-color;
                             font-size: 0.8rem;
-                            text-decoration: none;
-                            margin: 10px 0;
-                            font-weight: 500;
-                            padding: 10px;
-
-                            &:before
+                            position: fixed;
+                            opacity: 0.8;
+                            border-radius: 15px;
+                            transition: all 700ms ease-out;
+                            z-index: 1;
+                            display: none;
+                            margin: 8.3rem 0 0 1rem;
+                            
+                            a
                             {
-                                content: "-";
-                                display: block;
-                                width: 0;
-                                height: 2px;
-                                background: $left-color;
-                                transition: width 0.3s;
-                            }
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                line-height: 25px;
+                                width: 100px;
+                                color: #013795;
+                                font-size: 0.8rem;
+                                text-decoration: none;
+                                margin: 10px 0;
+                                font-weight: 500;
+                                padding: 10px;
 
-                            &:hover
-                            {
-                                outline: none;
-                                text-shadow: 0 0 10px 0;
-                                
                                 &:before
                                 {
-                                    width: 5px;
+                                    content: "-";
+                                    display: block;
+                                    width: 0;
+                                    height: 2px;
+                                    background: $left-color;
                                     transition: width 0.3s;
+                                }
+
+                                &:hover
+                                {
+                                    outline: none;
+                                    box-shadow: inset 10px 0 0 #b5b5b5;
+                                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                                    
+                                    &:before
+                                    {
+                                        width: 5px;
+                                        transition: width 0.3s;
+                                    }
                                 }
                             }
                         }
@@ -855,12 +901,12 @@ hr
 
         .colorPal
         {
-            height: 45px;
-            margin: 15% 0 0 0;
-            position: absolute;
+            width: 100%;
+            height: 75%;
             display: flex;
-            align-items: center;
-            justify-content: right; 
+            align-items: end;
+            justify-content: right;
+            flex-direction: column;
 
             #paletteLeft, #paletteMid, #paletteRight
             {
@@ -872,6 +918,7 @@ hr
                 background: transparent;
                 border: none;
                 cursor: pointer;
+
             }
 
             #paletteLeft::-webkit-color-swatch
@@ -915,8 +962,28 @@ hr
                 border: 1px solid #9000ff;
                 box-shadow: 0 0 10px 0 #000c20;
             }
-        
-            
+
+            i
+            {
+                width: 45px;
+                height: 45px;
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $mid-color;
+                cursor: pointer;
+                position: fixed;
+                transition: all 300ms ease-in;
+                
+
+                &:hover
+                {
+                    transform: rotateZ(360deg);
+                    transition: all 500ms ease-in;
+                }
+            }
 
         }
 
