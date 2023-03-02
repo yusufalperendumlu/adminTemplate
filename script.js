@@ -143,8 +143,6 @@ const leftColor = document.getElementById("paletteLeft");
 const midColor = document.getElementById("paletteMid");
 const rightColor = document.getElementById("paletteRight");
 
-const palettes = leftColor + midColor + rightColor;
-console.log(palettes);
 
 leftColor.addEventListener('change', () => {
     leftMain.style.backgroundColor = leftColor.value;
@@ -164,7 +162,10 @@ const chan = document.getElementById("Word");
 rightMain.addEventListener('mousemove', () => {
      const word = document.getElementById("word");
 
-     word.innerHTML = "Left  |  Mid  |  Right";
+     word.innerHTML = ` left |
+        mid |
+        right   
+     `;
      
      if(word.innerHTML = "Left  |  Mid  |  Right")
      {
@@ -190,15 +191,26 @@ card.forEach(card => {
     })
 })
 
-const tempList = document.querySelectorAll(".temp-list");
-const aTemp = document.querySelectorAll("#ass");
-const spanTemp = document.querySelectorAll(".active");
 
-tempList.forEach(list => {
-    list.addEventListener('click', () => {
-        spanTemp.forEach((span) => {
-            
-            
-        })
+const eleman = document.querySelectorAll(".temp-list");
+
+eleman.forEach(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log("click");
+
+        eleman.forEach(anotherelement => {
+            if(anotherelement !== element)
+            {
+                anotherelement.querySelector("a").style.color = "";
+                anotherelement.querySelector(".active").style.visibility = "hidden";
+            }
+        });
+
+        element.querySelector("a").style.color = "#ffffff";
+        element.querySelector(".active").style.visibility = "visible";
+
+        
     })
 })
+
