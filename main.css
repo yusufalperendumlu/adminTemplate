@@ -27,11 +27,18 @@ html {
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-hr {
-  max-width: 100%;
-  margin: 10% 10% 7% 0;
+.line {
+  height: 1px;
+  width: 100%;
+  background: #454545;
+  margin: 10rem 0 2rem 0;
+  opacity: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -99,9 +106,6 @@ hr {
   transition: 50ms linear;
   position: absolute;
   visibility: hidden;
-}
-.container .left-temp .left-temp-mid ul .temp-list .aactive {
-  visibility: visible;
 }
 .container .left-temp .left-temp-mid ul .temp-list a {
   color: rgba(191, 191, 191, 0.6235294118);
